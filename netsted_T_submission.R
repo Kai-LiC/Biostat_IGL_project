@@ -1,3 +1,15 @@
+###README###
+### 1. Construct Linear Mix Model(LMM)
+### 2.Test Normality for the data:skewness,Kolmogorov-Smirnov test
+##-------------If normally distributed:Stick with LMM
+##-------------If not, try to transform the data back to normally distributed(Optional step 1)
+###Optional step 1:Transform data:log, square root
+##-------------If it's normally distributed after transformation:Using LMM on transformed data
+##-------------If not, use Gamma Generalized Linear model(GLMM)(Optional step 2)
+###Optional step 2: Gamma GLMM(data is right skewed and contains only positive value). Test the fitness of the model.
+### 3.Multiple-comparisons correction
+### 4. Plotting
+
 library(readxl)
 library(lme4)
 library(lmerTest)
