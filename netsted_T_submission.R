@@ -1,6 +1,6 @@
 ###README###
 ### 1. Construct Linear Mix Model(LMM)
-### 2.Test Normality for the data:skewness,Kolmogorov-Smirnov test
+### 2.Test Normality for the data:skewness(<1),Shapiro-Wilk normality test(p-value>0.05)
 ##-------------If normally distributed:Stick with LMM
 ##-------------If not, try to transform the data back to normally distributed(Optional step 1)
 ###Optional step 1:Transform data:log, square root
